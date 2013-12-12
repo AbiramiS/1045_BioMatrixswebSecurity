@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+    android:background="@drawable/samsung">
+    <Button android:id="@+id/login_next1" android:layout_height="wrap_content" android:text="@string/next_label1" android:layout_width="wrap_content" android:layout_alignParentBottom="true" android:layout_alignLeft="@+id/service_holder1" android:layout_alignRight="@+id/service_holder1"></Button>
+    <RadioGroup android:id="@+id/service_holder1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_above="@+id/login_next1" android:layout_centerHorizontal="true" android:layout_marginBottom="52dp">
+        <RadioButton android:text="@string/votersid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioButton1" android:textColor="#FFFFFF" android:checked="true"></RadioButton>
+        <RadioButton android:text="@string/drivinglicense" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33dp" android:id="@+id/radioButton2" android:textColor="#FFFFFF"></RadioButton>
+        <RadioButton android:text="@string/pancard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:id="@+id/radioButton3" android:textColor="#FFFFFF"></RadioButton>
+    </RadioGroup>
+    <TextView android:text="@string/selectoption" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:textSize="23dp" android:textColor="#5CB3FF" android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_above="@+id/service_holder1" android:layout_alignParentLeft="true" android:layout_marginBottom="57dp"></TextView>
+</RelativeLayout>

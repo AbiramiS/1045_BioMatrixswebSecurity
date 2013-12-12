@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+    android:background="@drawable/samsung">
+    <TextView android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:text="@string/registration_title"></TextView>
+    <TextView android:layout_width="wrap_content" android:text="@string/password_label" android:id="@+id/textView3" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_below="@+id/register_phase1_username" android:layout_alignLeft="@+id/textView2" android:layout_marginTop="29dp"></TextView>
+    <EditText android:id="@+id/register_phase1_username" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/textView2" android:layout_alignBottom="@+id/textView2" android:layout_width="150dp" android:layout_alignParentRight="true" android:layout_alignLeft="@+id/textView1"><requestFocus></requestFocus></EditText>
+    <TextView android:layout_width="wrap_content" android:id="@+id/textView4" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_below="@+id/register_phase1_password" android:layout_alignLeft="@+id/textView3" android:text="@string/email_label" android:layout_marginTop="30dp"></TextView>
+    <EditText android:layout_width="150dp" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/textView3" android:layout_alignBottom="@+id/textView3" android:layout_alignParentRight="true" android:inputType="textPassword" android:id="@+id/register_phase1_password" android:layout_alignLeft="@+id/register_phase1_username"></EditText>
+    <EditText android:layout_width="150dp" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/textView4" android:layout_alignBottom="@+id/textView4" android:layout_alignLeft="@+id/register_phase1_password" android:layout_alignParentRight="true" android:id="@+id/register_phase1_email" android:inputType="textEmailAddress"></EditText>
+    <EditText android:layout_width="150dp" android:layout_height="wrap_content" android:layout_below="@+id/radioGroup1" android:layout_alignLeft="@+id/register_phase1_email" android:layout_alignParentRight="true" android:id="@+id/register_phase1_contact" android:inputType="number"/>
+    <TextView android:layout_width="wrap_content" android:text="@string/gender_label" android:id="@+id/textView5" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_below="@+id/register_phase1_email" android:layout_alignLeft="@+id/textView4" android:layout_marginTop="59dp"></TextView>
+    <RadioGroup android:id="@+id/radioGroup1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/register_phase1_email" android:layout_alignLeft="@+id/register_phase1_email" android:layout_marginTop="21dp">
+        <RadioButton android:layout_height="wrap_content" android:text="@string/male_label" android:layout_width="wrap_content" android:checked="true" android:id="@+id/male"></RadioButton>
+        <RadioButton android:layout_height="wrap_content" android:text="@string/female_label" android:layout_width="wrap_content" android:id="@+id/female"></RadioButton>
+    </RadioGroup>
+    <Button android:text="@string/next_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:id="@+id/register_phase1_next" android:layout_toRightOf="@+id/radioGroup1"></Button>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView6" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/contact_label" android:layout_below="@+id/radioGroup1" android:layout_alignLeft="@+id/textView5"></TextView>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/username_label" android:id="@+id/textView2" android:layout_below="@+id/textView1" android:layout_alignParentLeft="true" android:layout_marginTop="15dp"></TextView>
+    
+</RelativeLayout>

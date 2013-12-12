@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MobilePhonesAndBiometricsActivity!</string>
+    <string name="app_name">MobilePhonesAndBiometrics</string>
+    <string name="login">Login</string>
+    <string name="login1">User Login</string>
+    <string name="register">Register</string>
+    <string name="registration_title">User Registration</string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="email_label">E-Mail</string>
+    <string name="gender_label">Gender</string>
+     <string name="enterid">Enter Your Id</string>
+    <string name="contact_label">Contact\nNumber</string>
+    <string name="male_label">Male</string>
+    <string name="female_label">Female</string>
+    <string name="next_label">Next>>></string>
+    <string name="next_label1">Next>>></string>   
+    <string name="next_label2">Proceed</string> 
+    <string name="picture_text">Take Picture</string>
+    <string name="submit_label">Submit</string>
+    <string name="account_label">Account No.</string>
+    
+    <string name="welcome">On the Use of Mobile and Biometrics for Accessing Restricted Web Services</string>
+    
+    <string name="votersid">Voters Id</string>
+    <string name="drivinglicense">Driving License</string>
+    <string name="pancard">Pan Card</string>
+    <string name="selectoption">Select an Option</string>
+    
+    <string name="ok">Ok</string>
+    <string name="balance_label">BalanceSummary</string>
+    <string name="transfer_label">ScheduleTransfer</string>
+    <string name="service_label">Choose a Service</string>
+    <string name="transfer_form_label">Transfer To</string>
+    <string name="choose_a_bank_label">Choose a Bank</string>
+    <string name="indian_bank_label">IndianBank</string>
+    <string name="state_bank_label">StateBank</string>
+    <string name="enter_acc_no_label">Account No.</string>
+    <string name="branch_name_label">Branch Name</string>
+    <string name="amount_label">Amount</string>
+    <string name="server_url">http://10.0.0.11:9999/Mobile_Phones_Biometrics/</string>
+    <string name="user_id">User ID</string>
+    <string name="application_label1">mobile phone</string>
+    <string name="application_label2">Biometric Security</string>
+    <string name="application_label3">Biometrics for the Real World</string>
+    <string name="android">android</string> 
+</resources>

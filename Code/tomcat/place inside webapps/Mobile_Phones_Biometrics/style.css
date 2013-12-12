@@ -1,0 +1,297 @@
+/* CSS DOCUMENT */
+
+/*-------------------------- GENERAL --------------------------*/
+body{
+	padding:0; margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+div, mg, p, a, ul, form, input, label, h2, h3{
+	padding:0; margin:0;
+	}
+img{ border:none;}
+a{ outline:none; text-decoration:none;}
+ul{ list-style-type:none;}
+.spacer{
+	line-height:0; font-size:0; clear:both;
+	}
+
+/*-------------------------- HEADER --------------------------*/
+div#header-bg{
+	background:#2B0D0A url(images/header-bg.gif) 0 100% repeat-x;
+	padding:32px 0 32px 0;
+	}
+div#header-bg div#header{
+	width:922px; margin:0 auto;
+	}
+div#header-bg div#header img.logo{
+	float:left; margin:2px 0 0 0;
+	}
+
+/*-------------------------- LOGIN AREA --------------------------*/
+div#header-bg div#header div#login-bg{
+	float:right; width:580px;
+	background:url(images/login-middle-bg.gif) 0 0 repeat-x;
+ 	}
+div#header-bg div#header div#login-bg div#login-area{
+	width:580px;
+	background:url(images/login-left-bg.gif) 0 0 no-repeat;
+	}
+div#header-bg div#header div#login-bg div#login-area form{
+	width:557px; height:47px; padding:21px 0 0 23px;
+	background:url(images/login-right-bg.gif) 100% 0 no-repeat;
+	}
+div#header-bg div#header div#login-bg div#login-area form label{
+	background:url(images/login-icon.jpg) 0 2px no-repeat;
+	line-height:25px; font-size:22px; color:#FCF7CC;
+	padding:0 0 0 31px; float:left; margin:0 12px 0 0;
+	}
+div#header-bg div#header div#login-bg div#login-area form input{
+	width:120px; height:18px; border:1px solid #924A43;
+	background-color:#70322C; font-size:10px; color:#fff;
+	line-height:10px; padding:5px 0 0 10px; float:left;
+	margin:0 12px 0 0;
+	}
+div#header-bg div#header div#login-bg div#login-area form input.login-btn{
+	width:52px; height:24px; border:none;
+	background:none; padding:0; margin:1px 0 0 0;
+	}
+/*-------------------------- NAVIGATION PART --------------------------*/
+div#navigation-bg{
+	height:66px; background:url(images/navigation-bg.gif) 0 0 repeat-x;
+	}
+div#navigation-bg div#navigation{
+	width:922px; margin:0 auto;
+	}
+div#navigation-bg div#navigation ul.mainMenu{
+	padding:0; float:left; width:567px;
+	}
+div#navigation-bg div#navigation ul.mainMenu li{
+	width:81px; float:left;
+	background:url(images/navigation-divider.gif) 100% 0 no-repeat;
+	}
+div#navigation-bg div#navigation ul.mainMenu li a{
+	width:80px; height:33px; display:block;
+	line-height:33px; text-align:center;
+	font-weight:bold; color:#FAF0C2; font-size:11px;
+	}
+div#navigation-bg div#navigation ul.mainMenu li a:hover{
+	background:url(images/navigation-bg-selected.gif) 0 0 no-repeat;
+	}
+div#navigation-bg div#navigation ul.mainMenu li a.selectMenu{
+	width:80px; height:33px; display:block;
+	line-height:33px; text-align:center;
+	font-weight:bold; color:#FAF0C2; font-size:11px;
+	background:url(images/navigation-bg-selected.gif) 0 0 no-repeat;
+	}
+
+/*-------------------------- DROP DOWN MENU STARTS --------------------------*/
+ul.subNav{
+	font:normal 11px/12px Arial, Helvetica, sans-serif;
+	padding:4px 0 0 0;
+	}
+ul.subNav li{
+	background:url(images/navigation-dropdown-divider.gif) 0 0 no-repeat;
+	height:17px; float:left; padding:6px 0 0 0;
+	}
+ul.subNav li a{
+	display:block; margin:0 22px 0 20px;
+	color:#84915D;
+	}
+ul.subNav li a:hover{
+	color:#fff;
+	}
+/*-------------------------- DROP DOWN MENU ENDS --------------------------*/
+
+div#navigation-bg div#navigation a.signup{
+	width:71px; height:28px; display:block;
+	background:url(images/sign-up-btn.gif) 0 0 no-repeat;
+	margin:2px 0 0 0; float:right; 
+	}
+div#navigation-bg div#navigation a.signup:hover{
+	background:url(images/sign-up-btn-selected.gif) 0 0 no-repeat;
+	}
+
+/*-------------------------- OUR COMPANIES MAIN FEATURES --------------------------*/
+div#ourCompany-bg{
+	background:#E7DFA0 url(images/our-company-bg.gif) 0 0 repeat-x;
+	}
+div#ourCompany-bg div#ourCompany-part{
+	width:922px; margin:0 auto; padding:26px 0 28px 0;
+	background:url(images/our-company-bg-pic.jpg) 606px 0 no-repeat;
+	}
+div#ourCompany-bg div#ourCompany-part h2.ourCompany-hdr{
+	font:normal 35px/38px "Arial Narrow", Arial, Helvetica, sans-serif;
+	color:#082733; width:574px; height:43px;
+	background:url(images/horz-dot.gif) 0 100% repeat-x;
+	}
+div#ourCompany-bg div#ourCompany-part div#ourCompany-leftPart{
+	width:284px; border-right:2px solid #CBC387;
+	margin:12px 0 0 0; float:left;
+	}
+h2.faq-Hdr{
+	width:231px; height:20px; color:#951509;
+	line-height:19px; font-weight:bold; font-size:12px;
+	padding:0 0 0 21px; background:#FAF3BB url(images/faq-icon.gif) 3px 4px no-repeat;
+	}
+h2.moreIdeas-Hdr{
+	width:231px; height:20px; color:#951509;
+	line-height:19px; font-weight:bold; font-size:12px;
+	padding:0 0 0 21px; background:#FAF3BB url(images/more-ideac-icon.gif) 3px 4px no-repeat;
+	}
+ul.ourCompany-list{
+	padding:11px 0 10px 0;
+	}
+ul.ourCompany-list li{
+	background:url(images/bullet1.gif) 0 3px no-repeat;
+	display:block; margin:0 0 8px 0; padding:0 0 0 15px;
+	color:#47481A; font-size:11px; line-height:11px;
+	}
+ul.ourCompany-list li a{
+	color:#47481A; font-size:11px; line-height:11px;
+	text-decoration:underline;
+	}
+ul.ourCompany-list li a:hover{
+	text-decoration:none;
+	}
+div#ourCompany-bg div#ourCompany-part div#ourCompany-rightPart{
+	width:252px; margin:12px 0 0 0; float:left;
+	padding:0 0 0 25px;
+	}
+h2.moreInfo-Hdr{
+	width:231px; height:20px; color:#951509;
+	line-height:19px; font-weight:bold; font-size:12px;
+	padding:0 0 0 21px; background:#FAF3BB url(images/more-info-icon.gif) 3px 4px no-repeat;
+	}
+p.moreInfo-Text{
+	padding:0 0 20px 23px; font-size:10px;
+	line-height:14px; color:#47481A;
+	}
+h2.searchUrl-Hdr{
+	width:231px; height:20px; color:#951509;
+	line-height:19px; font-weight:bold; font-size:12px;
+	padding:0 0 0 21px; background:#FAF3BB url(images/search-url-icon.gif) 3px 4px no-repeat;
+	}
+
+/*-------------------------- FUTURE PLANS --------------------------*/
+div#futurePlan-bg{
+	background:#2B0D0A url(images/future-plan-bg.gif) 0 0 repeat-x;
+	}
+div#futurePlan-bg div#futurePlanContant{
+	width:922px; margin:0 auto;
+	padding:37px 0 54px 0;
+	}
+
+/*-------------------------- PROJECTS 2007 --------------------------*/
+div#futurePlan-bg div#futurePlanContant div#projPart{
+	width:251px; float:left;
+	background-color:#706933;
+	padding:2px 2px 28px 2px;
+	}
+div#futurePlan-bg div#futurePlanContant div#projPart h2.proj-hdr{
+	height:37px; padding:13px 0 0 13px; color:#fff;
+	font:normal 24px/25px "Arial Narrow", Arial, Helvetica, sans-serif;
+	background-color:#1E1E1C; text-transform:uppercase;
+	}
+div#futurePlan-bg div#futurePlanContant div#projPart h2.proj-hdr span{
+	font-weight:bold;
+	}
+div#futurePlan-bg div#futurePlanContant div#projPart ul.pic{
+	padding:3px 0 0 0;
+	}
+div#futurePlan-bg div#futurePlanContant div#projPart ul.pic li{
+	display:block; margin:0 2px 0 0; float:left;
+	}
+div#futurePlan-bg div#futurePlanContant div#projPart ul.pic li.noRightMargin{
+	margin:0;
+	}
+div#futurePlan-bg div#futurePlanContant div#projPart ul.pic li.noRightMargin a{
+	display:block;
+	}
+div#futurePlan-bg div#futurePlanContant div#projPart h3.sub-hdr{
+	color:#E7DFA0; font-size:12px; line-height:12px;
+	font-weight:bold; text-indent:28px; margin:15px 0 0 0;
+	background:url(images/bullet2.gif) 12px 0 no-repeat;
+	}
+div#futurePlan-bg div#futurePlanContant div#projPart p{
+	padding:10px 23px 0 13px; color:#fff;
+	font-size:11px; line-height:16px;
+	}
+div#futurePlan-bg div#futurePlanContant div#projPart a.more-btn{
+	display:block; width:76px; height:28px; margin:5px 0 0 159px;
+	background:url(images/read-more-btn.gif) 0 0 no-repeat;
+	}
+div#futurePlan-bg div#futurePlanContant div#projPart a.more-btn:hover{
+	background:url(images/read-more-btn-selected.gif) 0 0 no-repeat;
+	}
+
+/*-------------------------- FUTURE PART --------------------------*/
+div#futurePlan-bg div#futurePlanContant div#futurePart{
+	width:613px; float:right; padding:10px 0 0 0;
+	}
+div#futurePlan-bg div#futurePlanContant div#futurePart h2.future-hdr{
+	height:40px; color:#E7DFA0;
+	font:normal 35px/35px "Arial Narrow", Arial, Helvetica, sans-serif;
+	background:url(images/horz-dot-2.gif) 0 100% repeat-x;
+	}
+div#futurePlan-bg div#futurePlanContant div#futurePart h3.future-subHdr{
+	color:#B46F07; font-size:17px; line-height:17px;
+	padding:20px 0 0 0; font-weight:bold;
+	}
+div#futurePlan-bg div#futurePlanContant div#futurePart p{
+	padding:0 0 0 0; font-size:14px; line-height:24px;
+	color:#837C44; padding:20px 0 0 0; width:440px;
+	float:left;
+	}
+div#futurePlan-bg div#futurePlanContant div#futurePart img{
+	float:right; display:block; margin:-50px 0 0 0;
+	}
+
+/*-------------------------- FOOTER PART --------------------------*/
+div#footer-bg{
+	background:#121212 url(images/footer-bg.gif) 0 0 repeat-x;
+	}
+div#footer-bg div#footer-menu{
+	width:922px; margin:0 auto;
+	padding:20px 0 29px 0;
+	background:url(images/footer-logo.jpg) 100% 13px no-repeat;
+	}
+div#footer-bg div#footer-menu ul.footMenu{
+	padding:0 0 0 0;
+	}
+div#footer-bg div#footer-menu ul.footMenu li{
+	float:left; background:url(images/footmenu-divider.gif) 0 3px no-repeat;
+	}
+div#footer-bg div#footer-menu ul.footMenu li.noDivider{
+	background:none;
+	}
+div#footer-bg div#footer-menu ul.footMenu li a{
+	color:#B3AC8B; font-size:11px; line-height:16px;
+	padding:0 7px 0 7px; display:block; margin:0 0 0 1px;
+	}
+div#footer-bg div#footer-menu ul.footMenu li a:hover{
+	background-color:#262626;
+	}
+div#footer-bg div#footer-menu p.copyright{
+	padding:5px 0 0 7px; color:#706933;
+	font-size:11px; line-height:11px;
+	}
+div#footer-bg div#footer-menu p.copyright a{
+	color:#B3AC8B;
+	}
+div#footer-bg div#footer-menu p.copyright a:hover{
+	color:#706933;
+	}
+
+/*-------------------------- MISLENIOUS --------------------------*/
+.noBottomPadding{
+	padding-bottom:0 !important;
+	}
+.noBg{
+	background:none !important;
+	}
+.topPad{
+	padding-top:15px !important;
+	}
+
+
+

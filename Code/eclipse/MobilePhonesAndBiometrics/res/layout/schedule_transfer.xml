@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+    android:background="@drawable/samsung">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="23dp" android:textColor="#FFFFFF" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:text="@string/transfer_form_label"></TextView>
+    <RadioGroup android:layout_width="wrap_content" android:id="@+id/bank_chooser" android:layout_height="wrap_content" android:layout_below="@+id/textView1" android:layout_toRightOf="@+id/textView2" android:layout_marginLeft="22dp" android:layout_marginTop="16dp">
+        <RadioButton android:id="@+id/indian_bank" android:textColor="#FFFFFF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/indian_bank_label" android:checked="true"></RadioButton>
+        <RadioButton android:id="@+id/state_bank" android:textColor="#FFFFFF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/state_bank_label"></RadioButton>
+    </RadioGroup>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView3" android:layout_below="@+id/bank_chooser" android:layout_alignLeft="@+id/textView2" android:text="@string/enter_acc_no_label" android:layout_marginTop="16dp"></TextView>
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignBaseline="@+id/textView3" android:layout_alignBottom="@+id/textView3" android:layout_alignParentRight="true" android:layout_alignLeft="@+id/bank_chooser" android:id="@+id/transfer_acc_no" android:inputType="textPassword"></EditText>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#FFFFFF" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/choose_a_bank_label" android:id="@+id/textView2" android:layout_alignTop="@+id/bank_chooser" android:layout_alignParentLeft="true" android:layout_marginTop="14dp"></TextView>
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignBaseline="@+id/textView4" android:layout_alignBottom="@+id/textView4" android:layout_alignParentRight="true" android:layout_alignLeft="@+id/transfer_acc_no" android:id="@+id/transfer_branch_name"></EditText>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#FFFFFF" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/branch_name_label" android:id="@+id/textView4" android:layout_below="@+id/transfer_acc_no" android:layout_alignParentLeft="true" android:layout_marginTop="42dp"></TextView>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#FFFFFF" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/amount_label" android:id="@+id/textView5" android:layout_below="@+id/transfer_branch_name" android:layout_alignParentLeft="true" android:layout_marginTop="42dp"></TextView>
+    <EditText android:layout_height="wrap_content" android:inputType="number" android:layout_width="wrap_content" android:layout_alignBaseline="@+id/textView5" android:layout_alignBottom="@+id/textView5" android:layout_alignParentRight="true" android:layout_alignLeft="@+id/transfer_branch_name" android:id="@+id/tranfer_amount_to"></EditText>
+    <Button android:id="@+id/transfer_submit" android:layout_height="wrap_content" android:text="@string/submit_label" android:layout_width="wrap_content" android:layout_alignParentBottom="true" android:layout_alignLeft="@+id/textView1" android:layout_alignRight="@+id/textView1"></Button>
+</RelativeLayout>

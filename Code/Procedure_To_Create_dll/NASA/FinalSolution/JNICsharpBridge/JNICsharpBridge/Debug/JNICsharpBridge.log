@@ -1,0 +1,38 @@
+﻿Build started 2/25/2013 2:04:37 PM.
+     1>Project "G:\nasa\JNICsharpBridge\JNICsharpBridge\JNICsharpBridge.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\JNICsharpBridge.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\JNICsharpBridge.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Users\gts\Desktop\Prepare\FinalSolution\FaceRegonization-Java\FaceRegonization-Java\bin\Debug\FaceRegonization.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt Stdafx.cpp /clr:nostdlib 
+         Stdafx.cpp
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\JNICsharpBridge.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Users\gts\Desktop\Prepare\FinalSolution\FaceRegonization-Java\FaceRegonization-Java\bin\Debug\FaceRegonization.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt AssemblyInfo.cpp JNICsharpBridge.cpp /clr:nostdlib 
+         AssemblyInfo.cpp
+         JNICsharpBridge.cpp
+         Generating Code...
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /analyze- /errorReport:prompt "C:\Users\gts\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+       ResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\app.res" app.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\nasa\JNICsharpBridge\Debug\JNICsharpBridge.dll" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\JNICsharpBridge.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\nasa\JNICsharpBridge\Debug\JNICsharpBridge.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Debug\app.res
+         Debug\AssemblyInfo.obj
+         Debug\JNICsharpBridge.obj
+         Debug\Stdafx.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+            Creating library G:\nasa\JNICsharpBridge\Debug\JNICsharpBridge.lib and object G:\nasa\JNICsharpBridge\Debug\JNICsharpBridge.exp
+         JNICsharpBridge.vcxproj -> G:\nasa\JNICsharpBridge\Debug\JNICsharpBridge.dll
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"G:\nasa\JNICsharpBridge\Debug\JNICsharpBridge.dll;#2" /manifest Debug\JNICsharpBridge.dll.intermediate.manifest
+       _CopyFilesMarkedCopyLocal:
+         Copying file from "C:\Users\gts\Desktop\Prepare\FinalSolution\FaceRegonization-Java\FaceRegonization-Java\bin\Debug\FaceRegonization.dll" to "G:\nasa\JNICsharpBridge\Debug\FaceRegonization.dll".
+         Copying file from "C:\Users\gts\Desktop\Prepare\FinalSolution\FaceRegonization-Java\FaceRegonization-Java\bin\Debug\FaceRegonization.pdb" to "G:\nasa\JNICsharpBridge\Debug\FaceRegonization.pdb".
+       FinalizeBuildStatus:
+         Deleting file "Debug\JNICsharpBridge.unsuccessfulbuild".
+         Touching "Debug\JNICsharpBridge.lastbuildstate".
+     1>Done Building Project "G:\nasa\JNICsharpBridge\JNICsharpBridge\JNICsharpBridge.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.88

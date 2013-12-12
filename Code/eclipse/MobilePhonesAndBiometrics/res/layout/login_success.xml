@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+    android:background="@drawable/samsung">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="23dp"  android:textColor="#FFFFFF" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="33dp" android:text="@string/service_label"></TextView>
+    <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/textView1" android:layout_centerHorizontal="true" android:layout_marginTop="59dp" android:id="@+id/service_holder">
+        <RadioButton android:id="@+id/balance" android:textSize="18dp"  android:textColor="#FFFFFF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/balance_label" android:checked="true"></RadioButton>
+        <RadioButton android:id="@+id/transfer_amount" android:textSize="18dp"  android:textColor="#FFFFFF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfer_label"></RadioButton>
+    </RadioGroup>
+    <Button android:id="@+id/which_option" android:layout_height="wrap_content" android:text="@string/submit_label" android:layout_width="wrap_content" android:layout_below="@+id/service_holder" android:layout_alignRight="@+id/textView1" android:layout_marginTop="61dp" android:layout_alignLeft="@+id/service_holder"></Button>
+    
+</RelativeLayout>

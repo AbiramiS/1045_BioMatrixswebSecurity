@@ -1,0 +1,3 @@
+javac CsharpConsumer.java
+java CsharpConsumer
+pause

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+    android:background="@drawable/samsung">
+    <TextView android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:text="@string/login1"></TextView>
+    <EditText android:id="@+id/login_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/textView2" android:layout_alignBottom="@+id/textView2" android:layout_alignParentRight="true" android:layout_alignLeft="@+id/textView1">
+    </EditText>
+    <TextView android:layout_width="wrap_content" android:id="@+id/textView3" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_below="@+id/login_username" android:layout_alignLeft="@+id/textView2" android:layout_marginTop="40dp" android:text="@string/account_label"></TextView>
+    <EditText android:id="@+id/login_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/textView3" android:layout_alignBottom="@+id/textView3" android:layout_alignLeft="@+id/login_username" android:layout_alignParentRight="true" android:inputType="textPassword"></EditText>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:text="@string/next_label" android:id="@+id/login_next" android:layout_toRightOf="@+id/textView1"></Button>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/user_id" android:id="@+id/textView2" android:layout_below="@+id/textView1" android:layout_alignParentLeft="true" android:layout_marginTop="78dp"></TextView>
+    
+</RelativeLayout>

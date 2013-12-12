@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="mobile.bio"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-feature android:name="android.hardware.camera" />    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>	
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+ 	<uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+	<supports-screens android:resizeable="true"
+		android:smallScreens="true" android:normalScreens="true"
+		android:largeScreens="true" android:anyDensity="true" />
+		
+    <application android:icon="@drawable/biologo" android:label="@string/app_name">
+        <activity android:name=".MobilePhonesAndBiometricsActivity" android:theme="@android:style/Theme.Wallpaper"
+                  android:label="@string/app_name">
+        	<intent-filter>  
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".AndroidPaint" android:theme="@android:style/Theme.Wallpaper"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".AndroidPaintNext" android:theme="@android:style/Theme.Wallpaper"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AndroidPaintFinal" android:theme="@android:style/Theme.Wallpaper"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterPhase" android:theme="@android:style/Theme.Wallpaper">
+        	<intent-filter>  
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+        </activity>  
+        <activity android:name=".RegisterThird" android:theme="@android:style/Theme.Wallpaper">
+        	<intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+        </activity> 
+         <activity android:name=".RegisterSecond" android:theme="@android:style/Theme.Wallpaper">
+        	<intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+        </activity> 
+        <activity android:name=".RegisterCaptureImage" android:theme="@android:style/Theme.Wallpaper">
+        	<intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewInformation" android:theme="@android:style/Theme.Wallpaper">
+        	<intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginPhase1" android:theme="@android:style/Theme.Wallpaper"> 
+        	<intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginCaptureImage" android:theme="@android:style/Theme.Wallpaper">
+        	<intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginPhase2" android:theme="@android:style/Theme.Wallpaper">
+        	<intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ServiceChooser" android:theme="@android:style/Theme.Wallpaper">
+        	<intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

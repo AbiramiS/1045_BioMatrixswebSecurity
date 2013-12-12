@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <form-bean name="RegisterForm" type="org.apache.struts.validator.DynaValidatorForm">
+        <form-property name="username" type="java.lang.String"/>
+        <form-property name="password" type="java.lang.String"/>
+        <form-property name="gender" type="java.lang.String"/>
+        <form-property name="email" type="java.lang.String"/>
+        <form-property name="contactnumber" type="java.lang.String"/>
+        <form-property name="image" type="java.lang.String"/>
+        </form-bean>
+        
+        <form-bean name="PasswordForm" type="org.apache.struts.validator.DynaValidatorForm">
+        	<form-property name="sqlitevalue" type="java.lang.String"/>
+	        <form-property name="mobpass" type="java.lang.String"/>
+	        <form-property name="mobimeino" type="java.lang.String"/>
+        </form-bean>
+        
+        <form-bean name="AdminValueForm" type="org.apache.struts.validator.DynaValidatorForm">
+        	<form-property name="adminidvalue" type="java.lang.String"/>
+        </form-bean>
+        
+        <form-bean name="AdminForm" type="org.apache.struts.validator.DynaValidatorForm">
+        	<form-property name="adminname" type="java.lang.String"/>
+	        <form-property name="adminpassword" type="java.lang.String"/>
+        </form-bean>
+        
+        <form-bean name="AdminDepositForm" type="org.apache.struts.validator.DynaValidatorForm">
+        	<form-property name="adminaccnumber" type="java.lang.String"/>
+        	<form-property name="adminbranch" type="java.lang.String"/>
+        	<form-property name="adminmoney" type="java.lang.String"/>
+        </form-bean>
+        
+        <form-bean name="ImageForm" type="org.apache.struts.validator.DynaValidatorForm">
+        	<form-property name="imgdata" type="org.apache.struts.upload.FormFile"></form-property>
+        	<form-property name="userid" type="java.lang.String[]"/>
+	        <form-property name="accno" type="java.lang.String[]"/>
+        </form-bean>
+        
+        <form-bean name="BalanceForm" type="org.apache.struts.validator.DynaValidatorForm">
+        	<form-property name="balance" type="java.lang.String"/>
+        	<form-property name="userid" type="java.lang.String"/>
+        </form-bean>
+        
+        
+        <form-bean name="TransactionForm" type="org.apache.struts.validator.DynaValidatorForm">
+        	<form-property name="senderid" type="java.lang.String"/>
+        	<form-property name="bankname" type="java.lang.String"/>
+        	<form-property name="accno" type="java.lang.String"/>
+        	<form-property name="branchname" type="java.lang.String"/>
+        	<form-property name="amount" type="java.lang.String"/>
+        </form-bean>
+        
+        <form-bean name="SignatureFormOne" type="org.apache.struts.validator.DynaValidatorForm">
+        <form-property name="signaturefile" type="java.lang.String[]"/>    
+        <form-property name="positionvalues" type="java.lang.String[]"/>  
+        <form-property name="useridinfo" type="java.lang.String[]"/>
+        </form-bean>
+        
+        
+        <form-bean name="SignatureFormTwo" type="org.apache.struts.validator.DynaValidatorForm">
+        <form-property name="signaturefile" type="java.lang.String[]"/>    
+        <form-property name="positionvalues" type="java.lang.String[]"/>  
+        <form-property name="useridstatus" type="java.lang.String[]"/> 
+        </form-bean>
+        
+        
+        <form-bean name="SignatureCheckForm" type="org.apache.struts.validator.DynaValidatorForm">
+        <form-property name="signaturefile" type="java.lang.String[]"/>    
+        <form-property name="positionvalues" type="java.lang.String[]"/>  
+        <form-property name="useridffinal" type="java.lang.String[]"/>  
+        </form-bean>
+        
+        
+        <form-bean name="ImageForm1" type="org.apache.struts.validator.DynaValidatorForm">   
+      	    <form-property name="uploadedFile1" type="java.lang.String[]"/>   	
+        	<form-property name="username" type="java.lang.String[]"/>
+	        <form-property name="password" type="java.lang.String[]"/>
+	        <form-property name="gender" type="java.lang.String[]"/>
+	        <form-property name="email" type="java.lang.String[]"/>
+	        <form-property name="contactnumber" type="java.lang.String[]"/>
+	        <form-property name="proof" type="java.lang.String[]"/>
+	        <form-property name="phase3id" type="java.lang.String[]"/>	
+	        <form-property name="imeino" type="java.lang.String[]"/>	           
+        </form-bean>
+        
+        <form-bean name="ImageForm123" type="org.apache.struts.validator.DynaValidatorForm">
+        	<form-property name="imgdata" type="org.apache.struts.upload.FormFile"></form-property>
+        </form-bean>
+
+    </form-beans>
+    
+    <global-exceptions>
+    
+    </global-exceptions>
+
+    <global-forwards>
+        <forward name="welcome"  path="/Welcome.do"/>
+    </global-forwards>
+
+    <action-mappings>
+         <action path="/clientlogin" name="ImageForm" scope="request" type="com.yourcompany.struts.clientlogin"/>
+    
+    	 <action path="/passverification" name="PasswordForm" scope="request" type="com.yourcompany.struts.passverification"/>
+    
+    	 <action path="/balancesummary" name="BalanceForm" scope="request" type="com.yourcompany.struts.balancesummary"/>
+    	 
+    	 <action path="/signatureone" name="SignatureFormOne" scope="request" type="com.yourcompany.struts.SignatureVerificationOne"/>
+    	 
+    	 <action path="/signaturetwo" name="SignatureFormTwo" scope="request" type="com.yourcompany.struts.SignatureVerificationTwo"/>
+    	     	 
+    	 <action path="/signaturecheck" name="SignatureCheckForm" scope="request" type="com.yourcompany.struts.SignatureCheck"/>
+    	 
+    	 <action path="/transaction" name="TransactionForm" scope="request" type="com.yourcompany.struts.transaction"/>
+    
+    	 <action path="/Admin" name="AdminForm" scope="request" type="com.yourcompany.struts.AdminProcess">
+    	 <forward name="adminloginsuccess" path="/userlistpage.jsp"/>
+    	 <forward name="adminloginfailure" path="/userlistfailurepage.jsp"/>
+         </action>
+         
+         <action path="/AdminValue" name="AdminValueForm" scope="request" type="com.yourcompany.struts.AdminValueProcess">
+    	 <forward name="admintotalvalue" path="/admintotalvaluesuccess.jsp"/>
+         </action>
+    	 
+    	 <action path="/AdminDeposit" name="AdminDepositForm" scope="request" type="com.yourcompany.struts.AdminDepositProcess">
+    	 <forward name="depositsuccess" path="/admindepositsuccess.jsp"/>
+         </action>
+         
+         <action path="/CopyOfclientregister" name="ImageForm123" scope="request" type="com.yourcompany.struts.CopyOfclientregister"/>
+         
+    	 <action path="/clientregister" name="ImageForm1" scope="request" type="com.yourcompany.struts.clientregister"/>
+    </action-mappings>
+
+    
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
+    <message-resources parameter="com/yourcompany/struts/ApplicationResources"/>
+    
+    <!-- ========================= Tiles plugin ===============================-->
+    <!--
+    This plugin initialize Tiles definition factory. This later can takes some
+    parameters explained here after. The plugin first read parameters from
+    web.xml, thenoverload them with parameters defined here. All parameters
+    are optional.
+    The plugin should be declared in each struts-config file.
+    - definitions-config: (optional)
+    Specify configuration file names. There can be several comma
+    separated file names (default: ?? )
+    - moduleAware: (optional - struts1.1)
+    Specify if the Tiles definition factory is module aware. If true
+    (default), there will be one factory for each Struts module.
+    If false, there will be one common factory for all module. In this
+    later case, it is still needed to declare one plugin per module.
+    The factory will be initialized with parameters found in the first
+    initialized plugin (generally the one associated with the default
+    module).
+    true : One factory per module. (default)
+    false : one single shared factory for all modules
+    - definitions-parser-validate: (optional)
+    Specify if xml parser should validate the Tiles configuration file.
+    true : validate. DTD should be specified in file header (default)
+    false : no validation
+
+    Paths found in Tiles definitions are relative to the main context.
+    -->
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+    
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>
+  	
+</struts-config>

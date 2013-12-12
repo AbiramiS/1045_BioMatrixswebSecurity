@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+    android:background="@drawable/cameralens">
+    <TextView android:layout_width="wrap_content" android:id="@+id/registration_or_login" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"></TextView>
+    <Button android:id="@+id/image_submitter" android:layout_height="wrap_content" android:text="@string/submit_label" android:enabled="false" android:layout_width="150dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginBottom="50dp"></Button>
+    <Button android:id="@+id/imagetaker" android:layout_height="wrap_content" android:text="@string/picture_text" android:layout_width="wrap_content" android:layout_above="@+id/image_submitter" android:layout_centerHorizontal="true" android:layout_marginBottom="19dp"></Button>
+    <ImageView android:id="@+id/imageView1" android:layout_height="250dp" android:src="@drawable/icon" android:layout_width="250dp" android:layout_above="@+id/imagetaker" android:layout_centerHorizontal="true"></ImageView>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/a12">
+    
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:orientation="horizontal" android:id="@+id/base">
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="@string/login" android:id="@+id/login"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:text="@string/register" android:id="@+id/register"></Button>
+</LinearLayout>
+<TextView android:text="@string/android" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:textColor="#000000" android:layout_width="wrap_content" android:id="@+id/textView4" android:layout_above="@+id/base" android:layout_centerHorizontal="true" android:layout_marginBottom="14dp"></TextView>
+<TextView android:text="@string/application_label3" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView3" android:layout_above="@+id/textView4" android:layout_centerHorizontal="true"></TextView>
+<TextView android:text="@string/welcome" android:scrollHorizontally="true" android:layout_height="wrap_content" android:marqueeRepeatLimit="marquee_forever" android:fadingEdge="horizontal" android:singleLine="true" android:ellipsize="marquee" android:textColor="#FFFFFF" android:layout_width="wrap_content" android:id="@+id/widget29" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></TextView>
+<ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:src="@drawable/biologo" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignBottom="@+id/textView4"></ImageView>
+</RelativeLayout>

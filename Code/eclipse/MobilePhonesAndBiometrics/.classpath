@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="lib" path="F:/Android/And Projs/MobilePhonesAndBiometrics/lib/apache-mime4j-0.3.jar"/>
+	<classpathentry kind="lib" path="F:/Android/And Projs/MobilePhonesAndBiometrics/lib/commons-io-1.2.jar"/>
+	<classpathentry kind="lib" path="F:/Android/And Projs/MobilePhonesAndBiometrics/lib/httpmime-4.0-alpha4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

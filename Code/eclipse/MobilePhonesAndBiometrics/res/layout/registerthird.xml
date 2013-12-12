@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+    android:background="@drawable/samsung">
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:text="@string/next_label2" android:id="@+id/login_next12" android:layout_toRightOf="@+id/textView1"></Button>
+    <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/textView1" android:layout_centerHorizontal="true" android:layout_marginTop="59dp" android:id="@+id/service_holder1">
+    </RadioGroup>
+	<TextView android:text="@string/enterid" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginTop="148dp"></TextView>
+	<EditText android:layout_height="wrap_content" android:id="@+id/register_phase3_id" android:layout_width="150dp" android:layout_alignBottom="@+id/service_holder1" android:layout_toRightOf="@+id/textView1" android:layout_alignParentRight="true">
+		<requestFocus></requestFocus>
+	</EditText>
+
+</RelativeLayout>

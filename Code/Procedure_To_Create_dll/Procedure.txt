@@ -1,0 +1,32 @@
+Step  1:- Install Microsoft Visual Studio 2010
+
+Step  2:- Goto File Select New->New Project
+
+Step  3:- Explore Other Languages and Choose CLR and Select Class Library Visual C++
+
+Step  4:- And Enter Project Name as JNICsharpBridge and Set a Workspace Location
+
+Step  5:- On Your Solution Explorer JNICsharpBridge Project has been Created
+
+Step  6:- Inside jni\CppClrPrj\CppClrPrj\
+ 
+Step  7:- Copy JNICsharpBridge.cpp
+
+Step  8:- Paste Inside a Source Files Folder on Your Project JNICsharpBridge 
+
+Step  9:- Repeat Step 6 and Copy the Contents of CsharpConsumer,jni_md,jni C/C++ Headers Files
+
+Step 10:- Goto Header Files Folder on Project(ie Right Click->Header Files->Add->New Item-->Choose Header File(.h) Visual C++)-
+	  Create HFiles using above Names and paste exact file contents. You Directly do copy and paste those Files show Error.
+	  
+Step 11:- Right Click on Project Name->Add->Existing Item Follow Step 12	  
+
+Step 12:- Import Inside jni\MyCSharpMathsLib\MyCSharpMathsLib Microsoft Visual Studio Solution (.sln) File
+
+Step 13:- Choose Build on your MenuBar and Select Build JNICsharpBridge
+
+Step 14:- Build Successfully
+
+Step 15:- You Got Two DLL's on Your Workspace Location
+
+Step 16:- Follow Sample_Code to Run

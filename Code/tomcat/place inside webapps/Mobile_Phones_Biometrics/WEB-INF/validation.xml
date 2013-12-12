@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE form-validation PUBLIC
+          "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.1.3//EN"
+          "http://jakarta.apache.org/commons/dtds/validator_1_1_3.dtd">
+
+<form-validation>
+
+    <global>
+    </global>
+    <formset>
+
+         <form name="LoginForm">
+            <field
+                property="userName"
+                depends="required">
+                    <arg key="LoginForm.userName"/>
+            </field>
+            <field
+                property="password"
+                depends="required,minlength">
+                    <arg0 key="LoginForm.password"/>
+                    <arg1 key="${var:minlength}" name="minlength" resource="false"/>
+                    <var>
+                        <var-name>minlength</var-name>
+                        <var-value>6</var-value>
+                    </var>
+            </field>            
+            
+        </form>
+
+        
+    </formset>
+    
+    <formset>
+
+        <form name="userForm">
+        <field
+                property="name1"
+                depends="required">
+                    <arg0 key="userForm.name1"/>
+            </field>
+             <field
+                property="sex"
+                depends="required">
+                    <arg0 key="userForm.sex"/>
+            </field>
+
+
+            <field
+                property="dob"
+                depends="required,date">
+                    <arg key="userForm.dob"/>
+                    <var>
+                        <var-name>datePattern</var-name>
+                        <var-value>dd-MM-yy</var-value>
+                    </var>
+            </field>
+            <field
+                property="emailId"
+                depends="required,email">
+                    <arg key="userForm.emailId"/>
+            </field>
+             <field
+                property="year"
+                depends="required">
+                    <arg key="userForm.year"/>
+            </field>
+             <field
+                property="hobby"
+                depends="required">
+                    <arg key="userForm.hoppy"/>
+            </field>
+          <field
+                property="address"
+                depends="required">
+                    <arg key="userForm.address"/>
+            </field>
+            <field
+                property="Items"
+                depends="required">
+                    <arg key="userForm.Items"/>
+            </field>
+            <field
+                property="file"
+                depends="required">
+                    <arg key="userForm.file"/>
+            </field>
+
+		
+
+        </form>
+        
+        </formset>
+
+<formset>      
+<form name="ServiceForm">
+        <field
+                property="servicename"
+                depends="required">
+                    <arg0 key="ServiceForm.servicename"/>
+            </field>
+            </form>
+  </formset>
+  
+  <formset>      
+<form name="SubServiceForm">
+        <field
+                property="subservicename"
+                depends="required">
+                    <arg0 key="SubServiceForm.subservicename"/>
+            </field>
+            </form>
+  </formset>
+  
+
+
+  
+  <formset>
+  <form name="SubmitForm">
+        	<field
+                property="username"
+                depends="required">
+                    <arg0 key="SubmitForm.username"/>
+            </field>
+            <field
+                property="password"
+                depends="required">
+                    <arg0 key="SubmitForm.password"/>
+            </field>
+            </form>
+  </formset>
+  
+  
+  <formset>
+  <form name="AdminForm">
+        	<field
+                property="adminname"
+                depends="required">
+                    <arg0 key="AdminForm.adminname"/>
+            </field>
+            <field
+                property="adminpassword"
+                depends="required">
+                    <arg0 key="AdminForm.adminpassword"/>
+            </field>
+            </form>
+  </formset>
+  
+  
+  <formset>
+  <form name="NewUserSubmitForm">
+        	<field
+                property="username"
+                depends="required">
+                    <arg0 key="NewUserSubmitForm.username"/>
+            </field>
+            <field
+                property="password"
+                depends="required">
+                    <arg0 key="NewUserSubmitForm.password"/>
+            </field>
+            </form>
+  </formset>
+  
+  <formset>
+  <form name="AdminValueForm">
+        	<field
+                property="adminidvalue"
+                depends="required">
+                    <arg0 key="AdminValueForm.adminidvalue"/>
+            </field>
+            </form>
+  </formset>
+  
+  
+    <formset>
+  <form name="SearchForm">
+        	<field
+                property="searchname"
+                depends="required">
+                    <arg0 key="SearchForm.searchname"/>
+            </field>
+            </form>
+  </formset>
+  
+  
+  
+  
+        <!-- An example form -->
+        <formset>
+        <form name="logonForm">
+            <field
+                property="username"
+                depends="required">
+                    <arg key="logonForm.username"/>
+            </field>
+            <field
+                property="password"
+                depends="required,mask">
+                    <arg key="logonForm.password"/>
+                    <var>
+                        <var-name>mask</var-name>
+                        <var-value>^[0-9a-zA-Z]*$</var-value>
+                    </var>
+            </field>
+        </form>
+
+    </formset>
+
+
+    <!-- An example formset for another locale -->
+    <formset language="fr">
+
+        <constant>
+            <constant-name>postalCode</constant-name>
+            <constant-value>^[0-9a-zA-Z]*$</constant-value>
+        </constant>
+
+        <!-- An example form -->
+        <form name="logonForm">
+            <field
+                property="username"
+                depends="required">
+                    <arg key="logonForm.username"/>
+            </field>
+            <field
+                property="password"
+                depends="required,mask">
+                    <arg key="logonForm.password"/>
+                    <var>
+                        <var-name>mask</var-name>
+                        <var-value>^[0-9a-zA-Z]*$</var-value>
+                    </var>
+            </field>
+        </form>
+
+   </formset>
+
+</form-validation>

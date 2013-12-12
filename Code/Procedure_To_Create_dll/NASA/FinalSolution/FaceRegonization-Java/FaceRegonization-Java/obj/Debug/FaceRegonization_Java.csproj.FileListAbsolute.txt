@@ -1,0 +1,5 @@
+C:\Users\admin\Desktop\Progress\java\FaceRegonization-Java\FaceRegonization-Java\bin\Debug\FaceRegonization-Java.dll
+C:\Users\admin\Desktop\Progress\java\FaceRegonization-Java\FaceRegonization-Java\bin\Debug\FaceRegonization-Java.pdb
+C:\Users\admin\Desktop\Progress\java\FaceRegonization-Java\FaceRegonization-Java\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\Desktop\Progress\java\FaceRegonization-Java\FaceRegonization-Java\obj\Debug\FaceRegonization-Java.dll
+C:\Users\admin\Desktop\Progress\java\FaceRegonization-Java\FaceRegonization-Java\obj\Debug\FaceRegonization-Java.pdb
